@@ -1,0 +1,34 @@
+#include <iostream>
+
+
+
+int main(void){
+int i;
+int *p;
+i = 1234;
+p = &i;
+ std:: cout << "*p = " << *p << std::endl;
+ std::cout << " p = " << (long long)p << std::endl; //cast
+ std::cout << "p = " << (void *)p << std::endl; //cast
+ std::cout << "&p= " << (void *)&p << std::endl; //cast
+ 	return 0;
+}
+
+//comentarios da aula
+/* 
+i é uma variavel inteira
+p é um ponteiro para inteiro
+i recebe 1234
+p = &i faz p guardar o endereço de i
+como p aponta para i, entao *p vale 1234
+mostra o endereço guardado em p
+esse endereço é justamente o endereço de i
+mostra o endereço de i
+deve ser igual ao valor de p
+mostra o endereço da propria variavel pontero p
+esse enderemo é diferente do vaor guardado em p
+
+resumo: p -> endereço de i
+*p -> valor de i
+&p -> endereço do proprio ponteiro
+*/
