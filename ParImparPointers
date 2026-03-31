@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+  int num, pares = 0, impares = 0;
+  int *pPares = &pares;
+  int *pImpares = &impares;
+  
+  for (int i = 0; i < 10; i++){
+  printf("Digite o %d * numero: ", (i+1));
+  scanf("%d", &num);
+  	if (num % 2 == 0){
+    	(*pPares)++;
+    }
+    else{
+    	(*pImpares)++;
+        }
+  }
+  printf("Numero de pares: %d\n", pares);
+  printf("Numeros de impares: %d\n", impares);
+  
+  return 0;
+}
