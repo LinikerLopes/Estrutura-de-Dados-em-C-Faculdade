@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+struct Biblioteca {
+    char livro[50];
+    char autor[50];
+    char editora[50];
+    float edicao;
+};
+
+int main(){
+    struct Biblioteca teste;
+    
+    
+        printf("Digite as informacoes do livro: \n");
+        printf("Nome: ");
+        fgets(teste.livro, sizeof(teste.livro), stdin);
+        printf("Autor: ");
+       fgets(teste.autor, sizeof(teste.autor), stdin);
+        printf("Editora: ");
+        fgets(teste.editora, sizeof(teste.editora), stdin);
+        printf("Edicao: ");
+        scanf("%f", &teste.edicao);
+        
+        printf(" Nome: %s Autor: %s Editora: %s Edicao: %.1f \n", teste.livro, teste.autor, teste.editora, teste.edicao);
+        
+        return 0;
+    }
